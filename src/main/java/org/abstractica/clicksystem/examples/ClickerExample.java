@@ -12,7 +12,7 @@ public class ClickerExample
     {
         JavaCSG csg = JavaCSGFactory.createDefault();
         ClickSystem cs = ClickSystemFactory.system_12_8_6_medium(csg);
-        Geometry3D clicker = cs.getDoubleClicker(12, 6, 0);
+        Geometry3D clicker = cs.getDoubleClicker(0.5*cs.getUnit(), 0.5*cs.getUnit(), 0);
         csg.view(clicker);
     }
 }
